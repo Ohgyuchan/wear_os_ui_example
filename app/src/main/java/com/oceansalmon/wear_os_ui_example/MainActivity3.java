@@ -26,6 +26,6 @@ public class MainActivity3 extends Activity {
                 Intent intent = new Intent(MainActivity3.this, MainActivity4.class);
                 startActivity(intent);
             }
-        }, 4000);
+        }, 1000);
     }
 }
