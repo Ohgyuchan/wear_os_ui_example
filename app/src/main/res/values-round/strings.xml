@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">watch_ui</string>
+    <string name="hello_world">Hello Round World!</string>
+    <string name="play_routine">Play Routine Watch</string>
+    <string name="welcome">환영합니다!</string>
+    <string name="need_certification">모바일 앱에서 인증이 필요합니다.</string>
+    <string name="check_mobile">모바일에서 플레이루틴을\n확인해주세요!</string>
+    <string name="routine_remains">남은 루틴</string>
+</resources>
