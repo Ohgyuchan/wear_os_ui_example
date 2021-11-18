@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.oceansalmon.wear_os_ui_example.databinding.ActivityMainBinding;
 
+
 public class MainActivity extends Activity {
 
     private TextView mTextView;
@@ -24,7 +25,6 @@ public class MainActivity extends Activity {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("CLICK!!!");
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
             }

@@ -13,10 +13,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
         <activity
-            android:name=".MainActivity2"
-            android:exported="true"
-            android:label="@string/app_name">
-
+            android:name=".MainActivity2">
         </activity>
 
         <uses-library

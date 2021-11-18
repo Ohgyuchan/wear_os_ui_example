@@ -1,10 +1,9 @@
 package com.oceansalmon.wear_os_ui_example;
 
+import android.app.Activity;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
