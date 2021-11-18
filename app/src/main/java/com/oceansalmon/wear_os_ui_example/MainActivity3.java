@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.RotatingCircle;
+
 public class MainActivity3 extends Activity {
 
     @Override
@@ -13,14 +16,14 @@ public class MainActivity3 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        ProgressBar indicator = (ProgressBar) findViewById(R.id.progressBar);
-        ProgressBarAnimation anim = new ProgressBarAnimation(indicator, 0, 100);
-        indicator.startAnimation(anim);
+        ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar);
+        Sprite rotatingCircle = new RotatingCircle();
+        progressBar.setIndeterminateDrawable(rotatingCircle);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity3.this, MainActivity4.class);
                 startActivity(intent);
             }
         }, 4000);
