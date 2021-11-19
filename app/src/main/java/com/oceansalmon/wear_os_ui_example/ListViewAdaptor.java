@@ -54,13 +54,14 @@ public class ListViewAdaptor extends BaseAdapter {
         return routineModelList.get(position);
     }
 
-    public  void addItem(String title, String category, String startTime, String endTime) {
+    public  void addItem(String title, String category, String startTime, String endTime, String desc) {
         RoutineModel routineModel = new RoutineModel();
 
         routineModel.setTitle(title);
         routineModel.setCategory(category);
         routineModel.setStartTime(startTime);
         routineModel.setEndTime(endTime);
+        routineModel.setDesc(desc);
 
         routineModelList.add(routineModel);
     }
